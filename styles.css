@@ -1,0 +1,139 @@
+body{
+    margin: 7.5vw;
+    margin-top: 10vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    
+}
+
+h3,p{
+    margin:0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.profile-pics{
+    border-radius: 50%;
+    border-color: white;
+}
+
+main{
+    height: auto;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-part{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.right-part{
+    margin: 10px;
+}
+
+.top,.bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-first{
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+    z-index: -2;
+    position: relative;
+}
+
+.card-second{
+    background-color: hsl(217, 19%, 35%);
+    color:white;
+}
+
+.card-third{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card-fourth{
+    background-color:  hsl(219, 29%, 14%);
+    color: white;
+}
+
+.card-fifth{
+    background-color:  hsl(0, 0%, 100%);
+}
+
+
+.card-first, .card-second, .card-third, .card-fourth{
+    padding: 20px;
+    margin: 10px;
+    margin-top: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.5);
+}
+.card-fifth{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.5);
+}
+.head{
+    display: flex;
+}
+
+.author{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.quotes{
+    position: absolute;
+    z-index: -1;
+    right: 12%;
+}
+.less-opacity{
+    opacity: 50%;
+}
+.title{
+    margin-bottom: 18px;
+}
+
+@media(min-width:576px){
+    main{
+        flex-direction: row;
+    }
+
+    .right-part{
+        flex-basis: 25%;
+    }
+
+    .left-part{
+        flex-direction: column;
+        flex-basis: 75%;
+    }
+    
+    
+    .top, .bottom{
+        flex-direction: row;
+    }
+    .card-first{
+        flex-basis: 60%;
+    }
+    .card-second{
+        flex-basis: 40%;
+    }
+    .card-third{
+        flex-basis: 40%;
+    }
+    .card-fourth{
+        flex-basis: 60%;
+    }
+    .card-fifth{
+        height: 100%;
+    }
+}
+
+
