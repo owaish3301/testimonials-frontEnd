@@ -1,9 +1,9 @@
 body{
-    margin: 7.5vw;
+    display: grid;
+    place-items: center;
     margin-top: 10vh;
     background-color: hsl(210, 46%, 95%);
-    font-family: "Barlow Semi Condensed", sans-serif;
-    
+    font-family: "Barlow Semi Condensed", sans-serif;   
 }
 
 h3,p{
@@ -24,6 +24,7 @@ main{
     width: 85vw;
     display: flex;
     flex-direction: column;
+    max-width: 900px;
 }
 
 .left-part{
@@ -101,7 +102,7 @@ main{
     margin-bottom: 18px;
 }
 
-@media(min-width:576px){
+@media(min-width:760px){
     main{
         flex-direction: row;
     }
